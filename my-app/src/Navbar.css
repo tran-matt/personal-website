@@ -1,0 +1,28 @@
+nav li:hover > ul {
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    z-index: 1000;
+    left: 0; 
+  }
+  
+  nav ul ul li {
+    white-space: nowrap;
+  }
+  
+  nav ul ul li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  nav ul ul li a:hover {
+    background-color: #f7f7f7;
+    color: white;
+  }
+  
