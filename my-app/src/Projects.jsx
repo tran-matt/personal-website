@@ -48,7 +48,6 @@ const Projects = () => {
               </div>
               <div className="p-6 mt-auto border-t border-gray-200 flex">
                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex-grow inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 mr-2">
-                  {/* GitHub icon and text */}
                   GitHub
                 </a>
                 <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer" className="flex-grow inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 ml-2">
