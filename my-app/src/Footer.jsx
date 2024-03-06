@@ -9,7 +9,7 @@ const Footer = () => {
           <FaLinkedin size="2em" />
         </a>
         <a href="https://github.com/tran-matt" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
-          <FaGithub.png size="2em" />
+          <FaGithub size="2em" />
         </a>
       </div>
     </footer>
