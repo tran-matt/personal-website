@@ -8,7 +8,7 @@ const Projects = () => {
       description: "A Game Launch Page using React, blending dynamic visual effects, interactive forms, and a countdown timer for engaging user experience.",
       technologies: ["HTML", "CSS", "Javascript", "React"],
       githubLink: "https://github.com/tran-matt/game-launch-page",
-      liveDemoLink: "https://project1.example.com",
+      liveDemoLink: "https://www.loom.com/embed/a8142f2d9c7a4dae83cc311dc64429d7?sid=4f87b132-aebd-4626-9b47-ede3383cd62e",
       imageUrl: "GL1.png",
     },
     {
@@ -16,7 +16,7 @@ const Projects = () => {
       description: "A Fitness Tracker CLI application, allowing users to create, manage workouts, and track exercises with a robust set of commands.",
       technologies: ["Python", "Flask", "SQLAlchemy"],
       githubLink: "https://github.com/tran-matt/personal-finance-tracker",
-      liveDemoLink: "https://project2.example.com",
+      liveDemoLink: "https://www.loom.com/embed/0eaf8a55179d4bbab78eac7ff996b4cb?sid=f248c9bb-8f84-476b-9246-04286a8a6fde",
       imageUrl: "FA2.png",
     },
     {
@@ -24,7 +24,7 @@ const Projects = () => {
       description: "An item trading site for listing and managing exchange with other users.",
       technologies: ["HTML", "CSS", "React", "Python", "SQLAlchemy", "Flask"],
       githubLink: "https://github.com/tran-matt/exchange-ease",
-      liveDemoLink: "https://project3.example.com",
+      liveDemoLink: "https://www.loom.com/embed/2b7c1757f9ad4e80a9fc1f4eb3d41693?sid=d19886ce-1b66-4cf8-93ce-077e2518826c",
       imageUrl: "EE3.png",
     }
   ];
