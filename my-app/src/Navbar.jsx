@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -10,7 +12,26 @@ const Navbar = () => {
           <img src="NameLogo.png" className="h-8" alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Matthew Tran</span>
         </Link>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <button
+          className="md:hidden text-gray-900 dark:text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-dropdown">
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {['About', 'Experience', 'Blogs', 'Contact'].map((item, index) => (
               <li key={index}>
