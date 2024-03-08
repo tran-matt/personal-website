@@ -10,7 +10,7 @@ const Project2 = () => {
     ],
     technologies: ["Python", "Flask", "SQLAlchemy"],
     githubLink: "https://github.com/tran-matt/fitness-tracker",
-    liveDemoLink: "https://project2.example.com",
+    liveDemoLink: "https://www.loom.com/embed/0eaf8a55179d4bbab78eac7ff996b4cb?sid=f248c9bb-8f84-476b-9246-04286a8a6fde",
     technicalHighlights: [
       "Utilized Python ORM for a dynamic database with one-to-many relationships",
       "Structured user-friendly CLI menus for seamless interaction",
@@ -52,9 +52,9 @@ const Project2 = () => {
         </div>
 
         <div className="mt-6 flex space-x-4">
-          <a href={projectDetails.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">GitHub Repository</a>
-          <a href={projectDetails.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">Live Demo</a>
-        </div>
+    <a href={projectDetails.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">GitHub Repository</a>
+    <a href={projectDetails.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">Live Demo</a>
+  </div>
 
         <div className="mt-6">
           {projectDetails.images.map((image, index) => (

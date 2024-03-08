@@ -19,7 +19,7 @@ const Project3 = () => {
     ],
     technologies: ["HTML", "CSS", "React", "Python", "SQLAlchemy", "Flask"],
     githubLink: "https://github.com/tran-matt/exchange-ease",
-    liveDemoLink: "https://project3.example.com",
+    liveDemoLink: "https://www.loom.com/embed/2b7c1757f9ad4e80a9fc1f4eb3d41693?sid=d19886ce-1b66-4cf8-93ce-077e2518826c",
     technicalHighlights: [
       "Flask API backend with React frontend",
       "Three models with complex relational structures",
@@ -68,9 +68,9 @@ const Project3 = () => {
         </div>
 
         <div className="mt-6 flex space-x-4">
-          <a href={projectDetails.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">GitHub Repository</a>
-          <a href={projectDetails.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">Live Demo</a>
-        </div>
+    <a href={projectDetails.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">GitHub Repository</a>
+    <a href={projectDetails.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">Live Demo</a>
+  </div>
 
         <div className="mt-6">
           {projectDetails.images.map((image, index) => (

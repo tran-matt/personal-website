@@ -10,7 +10,7 @@ const Project1 = () => {
     ],
     technologies: ["HTML", "CSS", "Javascript", "React"],
     githubLink: "https://github.com/tran-matt/game-launch-page",
-    liveDemoLink: "https://project1.example.com",
+    liveDemoLink: "https://www.loom.com/embed/a8142f2d9c7a4dae83cc311dc64429d7?sid=4f87b132-aebd-4626-9b47-ede3383cd62e",
     technicalHighlights: [
       "React SPA with 5+ modular components",
       "Implemented React Router for seamless navigation",
@@ -52,9 +52,9 @@ const Project1 = () => {
         </div>
 
         <div className="mt-6 flex space-x-4">
-          <a href={projectDetails.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">GitHub Repository</a>
-          <a href={projectDetails.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">Live Demo</a>
-        </div>
+    <a href={projectDetails.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">GitHub Repository</a>
+    <a href={projectDetails.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">Live Demo</a>
+  </div>
 
         <div className="mt-6">
           {projectDetails.images.map((image, index) => (
