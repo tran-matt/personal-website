@@ -2,40 +2,53 @@ import React from 'react';
 
 const Project1 = () => {
   const projectDetails = {
-    name: "Game Launch Page",
-    description: "A Game Launch Page using React, blending dynamic visual effects, interactive forms, and a countdown timer for engaging user experience. This project aims to provide users with a seamless and interactive experience as they explore the game's features before launch. The development process involved tackling challenges such as integrating dynamic visual effects, managing state with React hooks for real-time updates, and implementing a RESTful API using JSON-server.",
+    name: "Assisted Living Facility",
+    description:
+      "An Assisted Living Facility website designed to showcase services, amenities, and values for senior living. Built with React, the project emphasizes accessibility, user-friendly design, and seamless navigation. This website is currently in use by a local assisted living facility to help prospective residents and their families explore their offerings.",
     images: [
-      "GL1.png",
-      "GL2.png",
+      "/AL1.png", 
+      "/AL2.png", 
     ],
-    technologies: ["HTML", "CSS", "Javascript", "React"],
-    githubLink: "https://github.com/tran-matt/game-launch-page",
-    liveDemoLink: "https://www.loom.com/embed/a8142f2d9c7a4dae83cc311dc64429d7?sid=4f87b132-aebd-4626-9b47-ede3383cd62e",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "React Router",
+      "PostCSS",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "EmailJS",
+    ],
+    githubLink: "https://github.com/tran-matt/assisted-living-facility",
+    liveDemoLink: "https://wellbeingal.netlify.app/",
     technicalHighlights: [
-      "React SPA with 5+ modular components",
-      "Implemented React Router for seamless navigation",
-      "Integrated JSON-server for RESTful API, executing GET and POST requests",
-      "Mastered state management using React hooks, ensuring real-time UI updates"
-    ]
+      "Responsive design for desktop and mobile views",
+      "React SPA with modular components for maintainability",
+      "Emphasis on accessibility with semantic HTML and ARIA roles",
+      "Integration of flexible grid layout for dynamic content display",
+      "Translation functionality to support multiple languages",
+      "Email functionality powered by EmailJS for user communication",
+    ],
+    inUse: true,
+    facilityNote:
+      "This website is actively used by a local assisted living facility to showcase their services and connect with prospective residents and their families.",
   };
-
-  const loomEmbedHtml = (
-    <div style={{position: "relative", paddingBottom: "56.25%", height: "0"}}>
-      <iframe 
-        src="https://www.loom.com/embed/a8142f2d9c7a4dae83cc311dc64429d7?sid=4f87b132-aebd-4626-9b47-ede3383cd62e" 
-        frameBorder="0" 
-        style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}} 
-        allowFullScreen
-        title="Game Launch Page Video" 
-      ></iframe>
-    </div>
-  );
 
   return (
     <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">{projectDetails.name}</h1>
+        <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          {projectDetails.name}
+        </h1>
         <p className="mt-4 text-gray-600">{projectDetails.description}</p>
+
+        {projectDetails.inUse && (
+          <div className="mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
+            <p className="font-semibold">Live Project:</p>
+            <p>{projectDetails.facilityNote}</p>
+          </div>
+        )}
 
         <div className="mt-6">
           <p className="font-semibold text-gray-700">Technical Highlights:</p>
@@ -52,18 +65,33 @@ const Project1 = () => {
         </div>
 
         <div className="mt-6 flex space-x-4">
-    <a href={projectDetails.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">GitHub Repository</a>
-    <a href={projectDetails.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-500">Live Demo</a>
-  </div>
-
-        <div className="mt-6">
-          {projectDetails.images.map((image, index) => (
-            <img key={index} src={image} alt={`Screenshot ${index + 1} of ${projectDetails.name}`} className="w-full mt-4 rounded-lg shadow-md"/>
-          ))}
+          <a
+            href={projectDetails.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-600 hover:text-indigo-500"
+          >
+            GitHub Repository
+          </a>
+          <a
+            href={projectDetails.liveDemoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-600 hover:text-indigo-500"
+          >
+            Live Website
+          </a>
         </div>
 
         <div className="mt-6">
-          {loomEmbedHtml}
+          {projectDetails.images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Screenshot ${index + 1} of ${projectDetails.name}`}
+              className="w-full mt-4 rounded-lg shadow-md"
+            />
+          ))}
         </div>
       </div>
     </div>

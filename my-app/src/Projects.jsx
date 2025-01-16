@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   const projects = [
     {
-      name: "Game Launch Page",
-      description: "A Game Launch Page using React, blending dynamic visual effects, interactive forms, and a countdown timer for engaging user experience.",
-      technologies: ["HTML", "CSS", "Javascript", "React"],
-      githubLink: "https://github.com/tran-matt/game-launch-page",
-      liveDemoLink: "https://www.loom.com/embed/a8142f2d9c7a4dae83cc311dc64429d7?sid=4f87b132-aebd-4626-9b47-ede3383cd62e",
-      imageUrl: "GL1.png",
+      name: "Assisted Living Facility",
+      description:
+        "A website designed to showcase services, amenities, and values for senior living. Currently in use by a local assisted living facility, featuring translation functionality and email communication via EmailJS.",
+      technologies: ["React", "TypeScript", "TailwindCSS", "React Router", "PostCSS", "JavaScript", "HTML", "CSS", "EmailJS"],
+      githubLink: "https://github.com/tran-matt/assisted-living-facility",
+      liveDemoLink: "https://wellbeingal.netlify.app/",
+      imageUrl: "/AL1.png", // Updated path for the homepage screenshot
     },
     {
       name: "Fitness Tracker",
@@ -26,7 +27,7 @@ const Projects = () => {
       githubLink: "https://github.com/tran-matt/exchange-ease",
       liveDemoLink: "https://www.loom.com/embed/2b7c1757f9ad4e80a9fc1f4eb3d41693?sid=d19886ce-1b66-4cf8-93ce-077e2518826c",
       imageUrl: "EE3.png",
-    }
+    },
   ];
 
   return (
