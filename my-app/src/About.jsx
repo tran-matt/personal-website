@@ -7,15 +7,19 @@ const About = () => {
         <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">About Me</h1>
         <div className="mt-4 text-gray-600 space-y-4">
           <p>
-            Hello! I'm Matt Tran, a recent graduate of Flatiron School’s Software Engineering program. My journey into software engineering began after years of exploring the field of medicine. While I have a deep appreciation for medicine, I found myself longing for a career that offered both creative freedom and continual growth opportunities. This led me to discover the world of software engineering through conversations with friends in the industry.
+            Hi, I’m Matt Tran! I bring a unique blend of experience from the healthcare industry and software engineering. My professional journey began in healthcare, where I honed my skills in problem-solving, adaptability, and working under pressure. I found immense fulfillment in helping others, but I craved a career where I could combine creativity, technology, and problem-solving on a larger scale. That’s when I discovered the world of software engineering.
           </p>
 
           <p>
-            My initial foray into this field was through the Odin Project, where I learned the fundamentals of HTML, CSS, and JavaScript. This experience ignited my passion for the creative and logical aspects of coding. Motivated by this newfound interest, I enrolled in Flatiron School’s Software Engineering program to deepen my understanding and skills.
+            My transition into tech started with <span className="font-semibold">The Odin Project</span>, where I learned the fundamentals of HTML, CSS, and JavaScript. Captivated by the creativity and logic involved in coding, I took the leap and enrolled in <span className="font-semibold">Flatiron School’s Software Engineering program</span>, where I gained hands-on experience building full-stack applications using modern technologies like React, Python, Flask, and SQLAlchemy.
           </p>
 
           <p>
-            During my time at Flatiron School, I gained proficiency in a diverse set of technologies, equipping me to be an effective full-stack developer. Here are some of the key technologies I have worked with recently:
+            Since graduating, I’ve been dedicated to furthering my skills by working on projects that merge my background in healthcare with technology. I’m passionate about creating tools and applications that solve real-world problems, especially at the intersection of healthcare and software. My goal is to leverage technology to improve lives and make impactful contributions to the industry.
+          </p>
+
+          <p>
+            Here are some of the key technologies I’ve been working with recently:
           </p>
 
           <div className="mt-5 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
@@ -29,6 +33,9 @@ const About = () => {
               'SQLAlchemy',
               'TypeScript',
               'TailwindCSS',
+              'PostgreSQL',
+              'Git',
+              'Redux',
             ].map((tech, index) => (
               <div key={index} className="flex items-center p-2 bg-blue-50 rounded-lg shadow">
                 <div className="ml-3">
@@ -39,7 +46,7 @@ const About = () => {
           </div>
 
           <p>
-            As a software engineer, I am committed to leveraging my skills to build innovative solutions and continually evolve in this dynamic field.
+            As a software engineer, I’m committed to lifelong learning and building innovative, user-centric solutions that leave a lasting impact. I’m excited to collaborate with like-minded individuals and contribute to meaningful projects that make a difference.
           </p>
         </div>
       </div>

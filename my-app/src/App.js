@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
@@ -13,32 +13,7 @@ import Project2 from './Project2';
 import Project3 from './Project3';
 import Footer from './Footer';
 
-const Loading = () => {
-  return (
-    <div className="loading-container">
-      <div className="lds-ring">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <p className="loading-text">Matthew Tran's Portfolio incoming...</p> 
-    </div>
-  );
-};
-
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loading />;
-  }
-
   return (
     <BrowserRouter>
       <div className="flex flex-col min-h-screen">
